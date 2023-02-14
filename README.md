@@ -1,6 +1,8 @@
 # Selenium UI Testing-Java Tutorial
 
-Selenium merupakan automation tool yang di pakai untuk pengecekan Functional Testing pada web-based application. Bisa digunakan dalam berbagai bahasa pemrograman seperti halnya java, ruby, python ataupun C#
+Selenium adalah perangkat lunak yang digunakan untuk melakukan pengujian fungsional pada aplikasi web. Selenium memungkinkan para pengujian untuk mengotomatisasi pengujian fungsional pada aplikasi web dengan menjalankan skrip yang terdiri dari serangkaian tindakan yang dilakukan oleh pengguna seperti klik, masukan data, navigasi, dan pengambilan data pada halaman web. Selenium mendukung berbagai bahasa pemrograman seperti Java, Python, C#, dan lainnya, sehingga pengujian dapat dikembangkan dengan bahasa pemrograman pilihan pengujian.
+
+Selenium juga mendukung berbagai browser web seperti Google Chrome, Mozilla Firefox, Microsoft Edge, dan lainnya. Hal ini memungkinkan para pengujian untuk menjalankan pengujian pada berbagai browser web yang digunakan oleh pengguna. Selenium memungkinkan pengujian dilakukan pada berbagai platform seperti Windows, Mac OS, dan Linux, sehingga pengujian dapat dilakukan pada berbagai platform yang digunakan oleh pengguna. Selenium juga dapat diintegrasikan dengan alat pengujian lainnya seperti JUnit dan TestNG, sehingga dapat memungkinkan para pengujian untuk menjalankan pengujian secara terintegrasi dan efisien.
 ## Installation
 * Periksa apakah sudah terinstall java pada perangkat kalian.
 ```
