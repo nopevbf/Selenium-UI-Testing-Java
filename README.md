@@ -19,3 +19,4 @@ $ java -version
   * Tambah Chrome Driver <p> <a href="https://chromedriver.chromium.org/downloads" target="_blank"> Chrome </p> (sesuaikan dengan versi chrome masing-masing)
   
 ## Tutorial Video
+[![Watch the video](https://img.youtube.com/vi/08vPNJo46Vs/hqdefault.jpg)](https://youtu.be/08vPNJo46Vs)
