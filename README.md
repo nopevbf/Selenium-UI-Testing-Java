@@ -13,7 +13,7 @@ $ java -version
 * <p align="left"> <a href="https://phoenixnap.com/kb/install-java-windows" target="_blank"> Setup windows </p>
 
 ## Requirement 
-* Text Editor (IntelliJ IDEA, Eclipse, VSCode)
+* Text Editor (IntelliJ IDEA, Eclipse, VSCode, Selenium IDE)
 * Create Maven Project
   * [Atur Dependencies](https://mvnrepository.com/)
   * Tambah Chrome Driver <p> <a href="https://chromedriver.chromium.org/downloads" target="_blank"> Chrome </p> (sesuaikan dengan versi chrome masing-masing)
