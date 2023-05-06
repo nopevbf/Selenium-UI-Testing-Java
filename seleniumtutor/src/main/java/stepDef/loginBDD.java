@@ -1,5 +1,6 @@
 package stepDef;
 
+import POM.loginPOM;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -34,13 +35,18 @@ public class loginBDD {
 
     @When("I enter valid credentials")
     public void iEnterValidCredentials() {
-        driver.findElement(By.name("user-name")).sendKeys("standard_user");
-        driver.findElement(By.name("password")).sendKeys("secret_sauce");
+//        driver.findElement(By.name("user-name")).sendKeys("standard_user");
+//        driver.findElement(By.name("password")).sendKeys("secret_sauce");
+        loginPOM login = new loginPOM(driver);
+        login.enterUsername("standard_user");
+        login.enterPassword("secret_sauce");
     }
 
     @And("I click on the login button")
     public void iClickOnTheLoginButton() {
-        driver.findElement(By.id("login-button")).click();
+//        driver.findElement(By.id("login-button")).click();
+        loginPOM login = new loginPOM(driver);
+        login.clickLoginButton();
     }
 
     @Then("I should be logged in")
@@ -53,15 +59,20 @@ public class loginBDD {
 
     @When("I enter invalid credentials")
     public void iEnterInvalidCredentials() {
-        driver.findElement(By.name("user-name")).sendKeys("standard_user07");
-        driver.findElement(By.name("password")).sendKeys("secret_sauce");
+//        driver.findElement(By.name("user-name")).sendKeys("standard_user07");
+//        driver.findElement(By.name("password")).sendKeys("secret_sauce");
+        loginPOM login = new loginPOM(driver);
+        login.enterUsername("standard_user07");
+        login.enterPassword("secret_sauce");
     }
 
     @Then("I get an error message")
     public void iGetAnErrorMessage() {
-        wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"login_button_container\"]/div/form/div[3]"))
-        );
+//        wait.until(
+//                ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"login_button_container\"]/div/form/div[3]"))
+//        );
+        loginPOM login = new loginPOM(driver);
+        login.getErrorMessage();
         driver.quit();
     }
 
