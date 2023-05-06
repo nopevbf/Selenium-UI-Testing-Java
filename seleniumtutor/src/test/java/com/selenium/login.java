@@ -17,9 +17,11 @@ public class login {
     String baseUrl = "https://www.saucedemo.com/";
     String drivePath = "src/test/java/resources/chromedriver.exe";
 
+
     @Test
     public void homePage() {
         System.setProperty("webdriver.chrome.driver", drivePath);
+        System.setProperty("webdriver.http.factory", "jdk-http-client");
         driver = new ChromeDriver();
         driver.get(baseUrl);
         driver.manage().window().maximize();
@@ -34,6 +36,7 @@ public class login {
     @Test
     public void loginTest(){
         System.setProperty("webdriver.chrome.driver", drivePath);
+        System.setProperty("webdriver.http.factory", "jdk-http-client");
         driver = new ChromeDriver();
         driver.get(baseUrl);
         driver.manage().window().maximize();
@@ -51,6 +54,7 @@ public class login {
     @Test
     public void logoutTest() throws InterruptedException{
         System.setProperty("webdriver.chrome.driver", drivePath);
+        System.setProperty("webdriver.http.factory", "jdk-http-client");
         driver = new ChromeDriver();
         driver.get(baseUrl);
         driver.manage().window().maximize();
